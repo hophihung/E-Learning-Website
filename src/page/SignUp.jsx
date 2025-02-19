@@ -10,7 +10,7 @@ const SignUp = () => {
     <div className="flex min-h-screen">
       <div className="hidden md:flex items-center justify-center w-1/2 bg-gray-100">
         <img
-          src="./image/signin.jpg"
+          src="./image/signup.jpg"
           alt="Signup Illustration"
           className="w-full h-full object-cover"
         />
