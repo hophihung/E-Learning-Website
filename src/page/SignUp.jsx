@@ -62,7 +62,7 @@ const SignUp = () => {
             </div>
 
             {/* Sign Up Button */}
-            <Button className="w-32 bg-purple-600 text-white hover:bg-purple-700 rounded-full mt-4">
+            <Button className="w-32 bg-purple-600 text-white hover:bg-purple-700 rounded-full absolute right-10">
               Sign Up
             </Button>
           </div>
