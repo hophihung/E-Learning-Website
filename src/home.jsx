@@ -5,7 +5,9 @@ const App = () => {
     <div className="bg-gray-100">
       {/* Header */}
       <header className="bg-white shadow-md">
+
         <div className="max-w-fullmx-auto px-4 py-4 flex justify-between items-center">
+
           <div className="flex items-center">
             <img
               src="https://storage.googleapis.com/a1aa/image/3yQkiRbFwKQw6qiIu-g2ZUaRXKMW82MSluD5h-kHFQA.jpg"
@@ -267,12 +269,8 @@ const App = () => {
 
 
 
-      {/* Recommended for you */}
-
-
-
-
       <div className="max-w-full mx-auto p-4">
+
         {/* Recommended for you section */}
         <div className="bg-blue-100 p-6 rounded-lg mb-8">
           <div className="flex justify-between items-center mb-4">
@@ -581,7 +579,7 @@ const App = () => {
       {/* CoursePage */}
 
 
-      <div className="max-w-full mx-auto px-4 py-8">
+  <div className="max-w-full mx-auto px-4 py-8">
         {/* Section 1 */}
         <div className="mb-8">
           <div className="flex justify-between items-center mb-4">
@@ -613,9 +611,8 @@ const App = () => {
               </div>
             </div>
 
-            {/* Card 22 */}
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+ {/* Card 1 */}
+               <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 src="https://storage.googleapis.com/a1aa/image/0icL3J1fJo85d9xPs_ZG-ebOQKkZcjUkbFGcg3KmQVE.jpg"
                 alt="Course image"
@@ -638,9 +635,8 @@ const App = () => {
               </div>
             </div>
 
-{/* Card 33 */}
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+{/* Card 1 */}
+               <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 src="https://storage.googleapis.com/a1aa/image/0icL3J1fJo85d9xPs_ZG-ebOQKkZcjUkbFGcg3KmQVE.jpg"
                 alt="Course image"
@@ -664,9 +660,8 @@ const App = () => {
             </div>
 
 
-{/* Card 4 */}
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+ {/* Card 1 */}
+               <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 src="https://storage.googleapis.com/a1aa/image/0icL3J1fJo85d9xPs_ZG-ebOQKkZcjUkbFGcg3KmQVE.jpg"
                 alt="Course image"
@@ -722,30 +717,6 @@ const App = () => {
               </div>
             </div>
 
-  {/* Card 1 */}
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img
-                src="https://storage.googleapis.com/a1aa/image/0icL3J1fJo85d9xPs_ZG-ebOQKkZcjUkbFGcg3KmQVE.jpg"
-                alt="Course image"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold">AWS Certified solutions Architect</h3>
-                <p className="text-gray-600 text-sm mt-2">
-                  Learn from global experts and get certified. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div className="flex items-center mt-4">
-                  <img
-                    src="https://storage.googleapis.com/a1aa/image/EAQTjTUrzITjcfTuJTftsArdrcsgjIc-_182aenWc54.jpg"
-                    alt="Instructor image"
-                    className="w-8 h-8 rounded-full"
-                  />
-                  <span className="ml-2 text-gray-700">Uke</span>
-                  <span className="ml-auto text-teal-500 font-semibold">$50</span>
-                </div>
-              </div>
-            </div>
 
   {/* Card 1 */}
 
@@ -773,7 +744,37 @@ const App = () => {
               </div>
             </div>
 
+
+
+
+
+            {/* Card 1 */}
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src="https://storage.googleapis.com/a1aa/image/0icL3J1fJo85d9xPs_ZG-ebOQKkZcjUkbFGcg3KmQVE.jpg"
+                alt="Course image"
+                className="w-full h-40 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold">AWS Certified solutions Architect</h3>
+                <p className="text-gray-600 text-sm mt-2">
+                  Learn from global experts and get certified. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div className="flex items-center mt-4">
+                  <img
+                    src="https://storage.googleapis.com/a1aa/image/EAQTjTUrzITjcfTuJTftsArdrcsgjIc-_182aenWc54.jpg"
+                    alt="Instructor image"
+                    className="w-8 h-8 rounded-full"
+                  />
+                  <span className="ml-2 text-gray-700">Uke</span>
+                  <span className="ml-auto text-teal-500 font-semibold">$50</span>
+                </div>
+              </div>
+            </div>
+
   {/* Card 1 */}
+
 
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -798,12 +799,16 @@ const App = () => {
                 </div>
               </div>
             </div>
+
+
+
+
             {/* Repeat the above card structure for other cards */}
           </div>
         </div>
         {/* Footer */}
         <footer className="bg-gray-900 text-white py-8">
-          <div className="max-w-full mx-auto px-4">
+ <div className="max-w-full mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center mb-6">
               <div className="flex items-center mb-4 md:mb-0">
                 <img
@@ -833,6 +838,7 @@ const App = () => {
           </div>
         </footer>
       </div>
+
 
     </div>
 
