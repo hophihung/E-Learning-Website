@@ -6,6 +6,11 @@ import { useNavigate } from 'react-router-dom';
 const SignIn = () => {
   const navigate = useNavigate();
 
+  const handleSignIn = () => {
+    // Bạn có thể thêm xử lý xác thực người dùng tại đây trước khi điều hướng
+    navigate('/home');
+  };
+
   return (
     <div className="flex min-h-screen">
       {/* Left: Illustration */}
@@ -13,21 +18,25 @@ const SignIn = () => {
         <img
           src="./image/signin.jpg"
           alt="Signup Illustration"
-          className="w-full h-full object-cover"
+          className="w-full h-[100vh] object-cover"
         />
       </div>
 
       {/* Right: Form */}
       <div className="flex items-center justify-center w-full md:w-1/2 p-8">
-        <Card title="Welcome to ITEL...!" className="w-full max-w-md p-4 justify-center text-center">
-          <div className="space-y-2">
+        <Card
+          title="Welcome to ITEL...!"
+          className="w-full max-w-md p-4 justify-center text-center border-0"
+          headStyle={{ borderBottom: 'none' }}
+        >
+          <div className="space-y-6">
             <div className="flex justify-center w-full">
               <div className="flex w-64 justify-center items-center rounded-full overflow-hidden bg-gradient-to-r from-purple-300 to-purple-400 p-0.5">
                 <Button className="w-1/2 bg-purple-600 text-white font-semibold hover:bg-purple-700 rounded-full text-xs py-1">
                   Sign In
                 </Button>
                 <Button
-                  onClick={() => navigate('/signup')} // Navigate to the SignUp page
+                  onClick={() => navigate('/signup')}
                   className="w-1/2 bg-transparent text-white font-semibold hover:bg-purple-100 rounded-full text-xs py-1"
                 >
                   Sign Up
@@ -36,18 +45,18 @@ const SignIn = () => {
             </div>
 
             <div className="flex items-center w-full justify-center">
-              <p className="text-center text-gray-500 max-w-xs">
+              <p className="text-center text-gray-500 max-w-xs leading-6">
                 ITEL is your companion and powerful assistant in the IT industry.
               </p>
             </div>
 
             <div>
-              <p className="text-left">User name</p>
+              <p className="text-left font-semibold">User name</p>
               <Input type="text" placeholder="Enter your User name" className="rounded-full" />
             </div>
 
             <div>
-              <p className="text-left">Password</p>
+              <p className="text-left font-semibold">Password</p>
               <Input.Password
                 placeholder="input password"
                 className="rounded-full"
@@ -63,7 +72,10 @@ const SignIn = () => {
               <span className="text-blue-600 cursor-pointer">Forgot Password?</span>
             </div>
 
-            <Button className="w-32 bg-purple-600 text-white hover:bg-purple-700 rounded-full absolute right-10">
+            <Button 
+              onClick={handleSignIn} 
+              className="w-32 bg-purple-600 text-white hover:bg-purple-700 rounded-full absolute right-10"
+            >
               Sign In
             </Button>
           </div>
