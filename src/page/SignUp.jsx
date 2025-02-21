@@ -8,7 +8,7 @@ const SignUp = () => {
 
   return (
     <div className="flex flex-row min-h-screen">
-      {/* Left Image Section */}
+      {/* ảnh bên trái  */}
       <div className="hidden md:flex items-center justify-center w-1/2 bg-gray-100">
         <img
           src="./image/signup.jpg"
@@ -17,11 +17,13 @@ const SignUp = () => {
         />
       </div>
 
-      {/* Right Form Section */}
+      {/* form bên phải */}
       <div className="flex flex-1 items-center justify-center min-h-screen p-8">
-        <Card title="Welcome to ITEL...!" className="w-full max-w-md p-4 text-center">
+        <Card  title="Welcome to ITEL...!"
+          className="w-full max-w-md p-4 justify-center text-center border-0"
+          headStyle={{ borderBottom: 'none' }}>
           <div className="space-y-4">
-            {/* Toggle Buttons */}
+            {/* button click */}
             <div className="flex justify-center w-full">
               <div className="flex w-64 justify-center items-center rounded-full overflow-hidden bg-gradient-to-r from-purple-300 to-purple-400 p-0.5">
                 <Button
@@ -36,12 +38,12 @@ const SignUp = () => {
               </div>
             </div>
 
-            {/* Introductory Text */}
+            {/* giới thiệu */}
             <p className="text-center text-gray-500 max-w-xs mx-auto">
               ITEL is your companion and powerful assistant in the IT industry.
             </p>
 
-            {/* Form Fields */}
+            {/* khung */}
             <div>
               <p className="text-left">Email Address</p>
               <Input type="text" placeholder="Enter your Email Address" className="rounded-full" />
