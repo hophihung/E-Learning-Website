@@ -18,7 +18,7 @@ const SignIn = () => {
         <img
           src="./image/signin.jpg"
           alt="Signup Illustration"
-          className="w-full h-full object-cover"
+          className="w-full h-[100vh] object-cover"
         />
       </div>
 
